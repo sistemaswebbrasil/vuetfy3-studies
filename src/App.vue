@@ -1,10 +1,7 @@
 <template>
   <MainLayout>
-    <!-- <nav>
-      <router-link to="/">Home</router-link> <v-icon icon="mdi-home" />|
-      <router-link to="/about">About</router-link> <v-icon icon="mdi-information" />|
-      <router-link to="/user">User</router-link> <v-icon icon="mdi-account" />
-    </nav> -->
+    <p>{{ $t('message.hello', { msg: 'hello' }) }}</p>
+
     <router-view />
   </MainLayout>
 </template>
