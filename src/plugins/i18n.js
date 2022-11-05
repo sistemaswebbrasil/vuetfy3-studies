@@ -7,6 +7,12 @@ export default createI18n({
       message: {
         hello: '%{msg} world',
       },
+      albums: {
+        id: 'ID',
+        title: 'Title',
+        artist: 'Artist',
+        price: 'Price',
+      },
     },
   },
 });

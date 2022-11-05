@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import UserForm from '../views/UserForm.vue';
+import AlbumsView from '../views/AlbumsView.vue';
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/user',
     name: 'user',
     component: UserForm,
+  },
+  {
+    path: '/albums',
+    name: 'albums',
+    component: AlbumsView,
   },
   {
     path: '/about',
