@@ -14,9 +14,8 @@
           <router-link to="/user">User</router-link> <v-icon icon="mdi-account" />
         </nav>
 
-        <v-row>
-          <slot />
-        </v-row>
+        <slot />
+        <v-row> </v-row>
       </v-container>
     </v-main>
   </v-app>
