@@ -1,10 +1,25 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <MainLayout>
+    <!-- <nav>
+      <router-link to="/">Home</router-link> <v-icon icon="mdi-home" />|
+      <router-link to="/about">About</router-link> <v-icon icon="mdi-information" />|
+      <router-link to="/user">User</router-link> <v-icon icon="mdi-account" />
+    </nav> -->
+    <router-view />
+  </MainLayout>
 </template>
+
+<script>
+// @ is an alias to /src
+import MainLayout from '@/template/MainLayout.vue';
+
+export default {
+  name: 'HomeView',
+  components: {
+    MainLayout,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
