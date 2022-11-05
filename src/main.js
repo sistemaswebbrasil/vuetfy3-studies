@@ -2,7 +2,11 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
+import { registerPlugins } from './plugins';
 import vuetify from './plugins/vuetify';
 
-createApp(App).use(store).use(router).use(vuetify)
-  .mount('#app');
+const app = createApp(App);
+
+registerPlugins(app);
+
+app.use(store).use(router).use(vuetify).mount('#app');
